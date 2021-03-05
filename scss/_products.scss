@@ -1,0 +1,65 @@
+.products {
+  position: relative;
+  text-align: center;
+  padding: 45px 0px 60px 0px;
+}
+
+.products__items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.products__image {
+  max-height: 200px;
+  margin-bottom: 75px;
+}
+
+.products__item {
+  & img {
+    margin: 0 auto;
+  }
+}
+
+.img__margin {
+  padding-top: 45px;
+}
+
+.products__title {
+  font-family: "Roboto-Bold";
+  font-size: 27px;
+  color: $text-dark;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.products__devider {
+  & img {
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+}
+
+.products__button {
+  padding: 11px;
+  margin-bottom: 20px;
+  margin-left: 8px;
+}
+
+.products__item-title {
+  font-family: "Roboto-Medium";
+  font-size: 20px;
+  color: $text-dark;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 810px) {
+  .products__items {
+    flex-direction: column;
+  }
+
+  .products__item {
+    padding: 10px;
+  }
+}

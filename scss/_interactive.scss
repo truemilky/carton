@@ -1,0 +1,31 @@
+.button {
+  font-family: "Roboto-Medium";
+  font-size: 14px;
+  color: $text-white;
+  background-color: $button-orange;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-orange-hover;
+    transition: all .3s;
+  }
+}
+
+.button-grey {
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  color: $gray-btn;
+  background-color: $text-white;
+  border: 1px solid $gray-btn;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+
+  &:hover {
+    color: $button-orange;
+    border-color: $button-orange;
+    transition: all .3s;
+  }
+}

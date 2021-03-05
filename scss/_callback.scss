@@ -1,0 +1,93 @@
+.callback {
+  position: relative;
+  padding: 55px 10px 65px 10px;
+  background: #151515 url("../img/callback/bcg.jpg") center no-repeat;
+  background-size: cover;
+  
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+  }
+}
+
+.callback__form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+
+  & input {
+    width: 40%;
+    height: 56px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
+
+.callback__title {
+  font-family: "Roboto-Regular";
+  font-size: 32px;
+  line-height: 35px;
+  color: $text-white;
+  margin-bottom: 15px;
+
+  & span {
+    font-size: 26px;
+  }
+}
+
+.callback__subtitle {
+  font-family: "Roboto-Light";
+  font-size: 20px;
+  color: $text-white;
+  margin-bottom: 10px;
+}
+
+.callback__button {
+  width: 20%;
+  height: 56px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.callback__remark {
+  font-family: "Roboto_Light";
+  font-size: 14px;
+  color: $text-white;
+  text-align: center;
+}
+
+@media (max-width: 765px) {
+  .callback__form {
+    & input {
+      width: 60%;
+    }
+  }
+
+  .callback__button {
+    width: 35%;
+  }
+}
+
+@media (max-width: 460px) {
+  .callback__form {
+    & input {
+      width: 80%;
+    }
+  }
+
+  .callback__button {
+    width: 50%;
+  }
+}

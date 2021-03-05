@@ -1,0 +1,22 @@
+@keyframes move-compressed {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 100%;
+  }
+}
+
+@keyframes boxes-move {
+  0% {
+    top: 20px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}

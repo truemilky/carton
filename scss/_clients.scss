@@ -1,0 +1,88 @@
+.clients {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.clients__title {
+  font-family: "Roboto-Bold";
+  font-size: 27px;
+  color: $text-dark;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 6px;
+    background-image: url("../img/clients/line.png");
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.clients__wrapper {
+  display: flex;
+ 
+}
+
+.clients__items {
+  display: flex;
+  flex-wrap: wrap;
+  & a {
+    margin: 0 auto;
+    & img {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+.clients__item {
+  display: flex;
+  flex-basis: 22%;
+  align-items: center;
+  border: 1px solid $gray-clients;
+  border-radius: 3px;
+  height: 130px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .clients {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 667px) {
+ 
+
+  .clients__items {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .clients__item {
+    width: 50%;
+    min-height: 130px;
+    padding: 10px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .clients {
+    padding: 0px 0px 10px;
+  }
+
+  .clients__title::after {
+    margin-bottom: 5px;
+  }
+
+  .clients__item {
+    margin: 5px auto;
+  }
+}

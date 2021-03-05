@@ -1,0 +1,42 @@
+@import "fonts";
+@import "variables";
+@import "animation";
+@import "popup";
+@import "interactive";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto; 
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.remark {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+  color: $text-white;
+  margin-left: 38px;
+  padding-bottom: 30px;
+}
+
+@import "header";
+@import "intro";
+@import "features";
+@import "products";
+@import "callback";
+@import "clients";
+@import "production";
+@import "testimonials";
+@import "feedback";
+@import "footer";

@@ -1,0 +1,121 @@
+.testimonials {
+  position: relative;
+  padding: 50px 0px 60px 0px;
+  background-color: $white-bcg;
+}
+
+.testimonials__title {
+  font-family: "Roboto-Bold";
+  font-size: 27px;
+  line-height: 30px;
+  color: $text-dark;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 46px;
+    height: 6px;
+    background: url("../img/testimonials/line.png") center no-repeat;
+    margin: 0 auto;  
+    margin: 20px auto;
+  }
+}
+
+.testimonials__slider {
+  margin: 0 auto;
+}
+
+.testimonials__inner {
+  position: relative;
+}
+
+.testimonials__prev {
+  position: absolute;
+  top: 180px;
+  left: 15px;
+  width: 10px;
+  height: 48px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 12px);
+    left: -7px;
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: $button-orange;
+    transform: rotate(-70deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% + 11px);
+    left: -7px;
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: $button-orange;
+    transform: rotate(70deg);
+  }
+}
+
+.testimonials__next {
+  position: absolute;
+  top: 180px;
+  right: 15px;
+  width: 10px;
+  height: 48px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 12px);
+    right: -7px;
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: $button-orange;
+    transform: rotate(70deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% + 11px);
+    right: -7px;
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: $button-orange;
+    transform: rotate(-70deg);
+  }
+}
+
+.testimonials-slide__item {
+  height: 362px;
+}
+
+.testimonials__slide {
+  min-height: 362px;
+  object-fit: cover;
+  border: 1px solid $gray-border;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+  .testimonials {
+    padding: 15px 0px;
+  }
+
+  .testimonials__next {
+    top: 178px;
+    right: 19px;
+  }
+}

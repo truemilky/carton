@@ -1,0 +1,121 @@
+.feedback {
+  min-height: 550px;
+  background: $button-orange url("../img/feedback/map.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.feedback__wrapper {
+  position: relative;
+}
+
+.feedback__box {
+  position: absolute;
+  top: 100px;
+  left: 15px;
+  min-width: 31%;
+  background-color: $text-white;
+  padding: 30px 0px 30px 50px;
+}
+
+.feedback__title {
+  font-family: "Roboto-Medium";
+  font-size: 18px;
+  line-height: 18px;
+  color: $text-dark;
+  margin-bottom: 5px;
+}
+
+.feedback__text {
+  font-family: "Roboto-Light";
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-dark;
+  margin-bottom: 10px;
+}
+
+.feedback__address {
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    display: block;
+    width: 17px;
+    height: 25px;
+    background-image: url("../img/feedback/map-marker.png");
+
+  }
+}
+
+.feedback__button {
+  padding: 15px 20px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.feedback__telephone {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    display: block;
+    width: 15px;
+    height: 22px;
+    background-image: url("../img/feedback/phone.png");
+  }
+}
+
+.feedback__email {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/feedback/envelope.png");
+  }
+}
+
+.feedback__map {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .feedback {
+    background: none;
+  }
+
+  .feedback__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .feedback__box {
+    position: static;
+    background-color: none;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .feedback__map {
+    display: block;
+    width: 75%;
+    min-height: 420px;
+    background: url("../img/feedback/map.jpg") center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}

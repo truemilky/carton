@@ -1,0 +1,109 @@
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.header__logo {
+  display: block;
+  background: url("../img/header/good-cart-icon.png") center no-repeat;
+  background-size: contain;
+  width: 191px;
+  height: 61px;
+}
+
+.header__calls-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__calls {
+  & a {
+    text-decoration: none;
+  }
+}
+
+.header__number {
+  font-family: "Roboto-Medium";
+  font-size: 22px;
+  color: $text-dark;
+  margin-right: 26px;
+}
+
+.header__devider {
+  position: relative;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -12px;
+    width: 1px;
+    height: 32px;
+    background-color: $gray-light;
+  }
+}
+
+.header__button {
+  padding: 10px 20px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/header/header-phone.png");
+    margin-right: 7px;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 850px) {
+  .header__inner {
+    padding: 15px 15px;
+  }
+
+  .header__calls {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__devider {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 633px) {
+  .header__logo {
+    width: 140px;
+    height: 60px;
+  }
+
+  .header__number {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header__button {
+    font-size: 0px;
+    padding: 15px;
+
+    &::before {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 410px) {
+  .header__logo {
+    background: url("../img/header/good-cart-icon-mobile.png") center no-repeat;
+    background-size: content;
+    width: 50px;
+    height: 50px;
+    background-color: $button-orange;
+  }
+}
